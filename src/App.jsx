@@ -10,11 +10,11 @@ function ToDoList() {
       setNewTask("");
     }
   };
-  // const music = new Audio("./add.mp3");
-  // music.play();
+  const music = new Audio("./add.mp3");
+  music.play();
 
   const handleRemoveTask = (index) => {
-    const updatedTasks = tasks.filter((_, i) => i !== index);
+    const updatedTasks = tasks.filter((i) => i !== index);
     setTasks(updatedTasks);
   };
 
@@ -45,7 +45,7 @@ function ToDoList() {
         ))}
       </ul>
       <div className="default-list">
-        {/* <li className="todo-item">Get IELTS</li> */}
+        {<li className="todo-item">Get IELTS</li>}
       </div>
       <div className="todo-footer">
         <p className="todo-footer-text">Created by </p>
